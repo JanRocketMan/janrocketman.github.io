@@ -3,7 +3,7 @@
 This is my custom blog for writing. I'll try to write something to it.
 
 
-## Credits:
+## Credits
 
 - [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful.
