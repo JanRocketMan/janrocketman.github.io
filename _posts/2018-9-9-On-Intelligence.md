@@ -10,7 +10,7 @@ HTM framework and tried to squeeze out his main points and insights on how can w
 
 <!--more-->
 
-First of all, I need to mention that the 
+Sorry, I'm still writing this post. I hope to finish it ~ at 16-th(
 
 Here is an example of neocortex column:
 ![Neocortex structure](/images/neocortex_column.png)
