@@ -11,14 +11,10 @@ to make them more stable and sample-efficient.
 
 <!--more-->
 
-<<<<<<< HEAD
 First of all, in my opinion, the book is written in a very, _very_ informal way,
 with tons of remarks, repetitions and unspecified assumptions. Therefore, this summarization
 may contain errors, especially when I describe the topology of a human neocortex. Feel free
 to correct me in comments, if you see any.
-=======
-Sorry, I'm still writing this post. I hope to finish it ~ at 16-th(
->>>>>>> c11c4efa8dd0f1ed696a502b02f62b510ae5292b
 
 # General vision
 
@@ -39,11 +35,13 @@ In other words, RNNs are more human-like.
 
 #### 2. Importance of feedback connections
 
-Or predictions. Cortical neurons effectively combines unsupervised and supervised learning
+Or predictions. According to Jeff, a neuron is a basic computational unit to perform prediction.
+It constantly predicts what it will see in the 
 
 
 #### 3. Deep hierarcical structure
 
+The above points are merged
 
 
 
