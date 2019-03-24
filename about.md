@@ -8,12 +8,13 @@ I'm a four year undergrad at MIPT, currently working as a Data Scientist at Scie
 
 Occasionally I take part in #apaperaday challenge, writing tiny reviews in [my twitter](https://www.twitter.com/JanRocks7). Feel free to comment and join!
 
-### Ongoing research projects
-- Adversarial defences for Cifar10 and Tiny-ImageNet via hierarcical self-prediction (based on [crowdai challenge](https://www.crowdai.org/challenges/nips-2018-adversarial-vision-challenge-robust-model-track))
-- TBD
-
 ### CV
-Latest version [here (09.09.2018)]({{site.url}}/assets/chervontsev_CV.pdf)
+Latest version [here (25.03.2019)]({{site.url}}/assets/chervontsev_CV.pdf)
+
+### Papers
+Currently, only reviews are available(
+A review of [neural speech synthesis]({{site.url}}/assets/Neural_Speech_Synthesis.pdf)
+A review of [deep metric learning classification]({{site.url}}/assets/Deep_Metric_Learning_with_Gaussian_Kernels.pdf)
 
 ### Contact me
 
