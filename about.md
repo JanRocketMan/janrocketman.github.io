@@ -13,8 +13,10 @@ Latest version [here (25.03.2019)]({{site.url}}/assets/chervontsev_CV.pdf)
 
 ### Papers
 Currently, only reviews are available(
-A review of [neural speech synthesis]({{site.url}}/assets/Neural_Speech_Synthesis.pdf)
-A review of [deep metric learning classification]({{site.url}}/assets/Deep_Metric_Learning_with_Gaussian_Kernels.pdf)
+
+A review of [neural speech synthesis]({{site.url}}/assets/NSS.pdf)
+
+A review of [deep metric learning classification]({{site.url}}/assets/DML_Gaussian.pdf)
 
 ### Contact me
 
