@@ -19,7 +19,7 @@ My list of interests include:
 Occasionally I take part in #apaperaday challenge, writing tiny reviews in [twitter](https://twitter.com/Schmidhoobough). Feel free to comment and join!
 
 ### Curriculum vitae
-Latest version [here (25.03.2019)]({{site.url}}/assets/chervontsev_CV.pdf)
+Latest version [here (25.03.2019)]({{site.url}}/assets/CV_Cherv.pdf)
 
 ### Articles
 Currently, there are only reviews here(
