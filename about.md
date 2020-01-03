@@ -4,30 +4,24 @@ title: About
 permalink: /about/
 ---
 
-I'm a four year undergrad at MIPT, passing an internship in Yandex Research.
-My list of interests include:
+Hi, I'm Sergey, a first year Master in [Data Science at HSE](https://www.hse.ru/en/ma/datasci/), passing an internship in Yandex Research. I used to study [at MIPT](https://mipt.ru/english/edu/phystechschools/psami) during my BS.
 
-- [Semi-Supervised](https://arxiv.org/abs/1804.09170), [Transfer](https://arxiv.org/abs/1808.01974) and [Active learning](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.167.4245) for Computer Vision
+I'm interested in:
 
-- Visual [domain adaptation](https://arxiv.org/abs/1802.03601) and [generalization](https://openreview.net/forum?id=rJEjjoR9K7)
+- Deep Generative modeling of any form, modality, color and gender.
 
-- [Energy-based models](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.67.6813)
+- [Semi-supervised](https://arxiv.org/abs/1804.09170) & [imbalanced learning](https://link.springer.com/article/10.1186/s40537-019-0192-5) in vision.
 
-- [Continual learning](https://arxiv.org/abs/1802.07569)
+- [Topological Data Analysis](https://arxiv.org/abs/1805.09949).
+
+- Theoretical Deep Learning from the [Gaussian Process](https://arxiv.org/abs/1806.07572) and [weight invariance](https://openreview.net/forum?id=Bylx-TNKvH) perspectives.
 
 
-Occasionally I take part in #apaperaday challenge, writing tiny reviews in [twitter](https://twitter.com/Schmidhoobough). Feel free to comment and join!
-
-### Curriculum vitae
-Latest version [here (25.03.2019)]({{site.url}}/assets/CV_Cherv.pdf)
-
-### Articles
-Currently, there are only reviews here(
-
-[A review of deep metric learning classification]({{site.url}}/assets/DML_Gaussian.pdf)
-
-[A review of neural speech synthesis]({{site.url}}/assets/NSS.pdf)
+Occasionally I take part in #apaperaday challenge, writing tiny reviews on [twitter](https://twitter.com/Schmidhoobough). Feel free to comment and join!
 
 ### Contacts
+My modest [Linkedin profile](linkedin.com/in/sergey-chervontsev-78436416b).
 
-[chervontsev.ss AT phystech.edu](mailto:chervontsev.ss@phystech.edu)
+My email:
+
+[chervontsev DOT ss AT phystech.edu](mailto:chervontsev.ss@phystech.edu)
