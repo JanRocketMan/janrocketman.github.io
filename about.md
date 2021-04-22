@@ -21,7 +21,7 @@ I also enjoy digging through a lot of papers and getting the overall picture of 
 
 # Contacts
 
-[CV]((https://janrocketman.github.io/assets/CV_Chervontsev.pdf)
+[CV](https://janrocketman.github.io/assets/CV_Chervontsev.pdf)
 
 [Twitter](https://twitter.com/Schmidhoobough)
 
