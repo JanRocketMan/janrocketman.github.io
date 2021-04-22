@@ -4,24 +4,28 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Sergey, a first year Master in [Data Science at HSE](https://www.hse.ru/en/ma/datasci/), passing an internship in Yandex Research. I used to study [at MIPT](https://mipt.ru/english/edu/phystechschools/psami) during my BS.
-
-I'm interested in:
-
-- Deep Generative modeling of any form, modality, color and gender.
-
-- [Semi-supervised](https://arxiv.org/abs/1804.09170) & [imbalanced learning](https://link.springer.com/article/10.1186/s40537-019-0192-5) in vision.
-
-- [Topological Data Analysis](https://arxiv.org/abs/1805.09949).
-
-- Theoretical Deep Learning from the [Gaussian Process](https://arxiv.org/abs/1806.07572) and [weight invariance](https://openreview.net/forum?id=Bylx-TNKvH) perspectives.
+Hi, I'm Sergey, Master student in [Data Science at HSE](https://www.hse.ru/en/ma/datasci/) and Junior Researcher at Yandex.
 
 
-Occasionally I take part in #apaperaday challenge, writing tiny reviews on [twitter](https://twitter.com/Schmidhoobough). Feel free to comment and join!
+Some topics I'm interested in:
 
-### Contacts
-My modest [Linkedin profile](linkedin.com/in/sergey-chervontsev-78436416b).
+- Generative Modeling and it's use for Unsupervised Learning (e.g. unsupervised discovery of [interpretable directions in GANs](http://proceedings.mlr.press/v119/voynov20a.html))
 
-My email:
+- Theoretical Deep Learning - [understanding benefits of Self-Supervised learning](https://arxiv.org/abs/2102.08850), derivation of [novel Generalization measures](https://windowsontheory.org/2020/10/18/understanding-generalization-requires-rethinking-deep-learning/)
 
+- Backpropagation-free DL training (e.g. [Greedy InfoMax](https://proceedings.neurips.cc/paper/2019/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html), [Equilibrium Propagation](https://www.frontiersin.org/articles/10.3389/fncom.2017.00024/full))
+
+- Alternatives to Deep Learning in Large-Scale tasks (e.g. [scattering networks](https://openreview.net/forum?id=SJxWS64FwH))
+
+I also enjoy digging through a lot of papers and getting the overall picture of current research.
+
+# Contacts
+
+[CV](janrocketman.github.io/assets/CV_Chervontsev.pdf)
+
+[Twitter](https://twitter.com/Schmidhoobough)
+
+[Linkedin profile](linkedin.com/in/sergey-chervontsev-78436416b)
+
+Mail:
 [chervontsev DOT ss AT phystech.edu](mailto:chervontsev.ss@phystech.edu)
