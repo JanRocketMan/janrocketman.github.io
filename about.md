@@ -9,7 +9,7 @@ Hi, I'm Sergey, a Master student in [Data Science at HSE](https://www.hse.ru/en/
 
 Some topics I'm interested in:
 
-- Generative Modeling with applications in Unsupervised Learning (e.g. discovery of [interpretable directions in GANs](http://proceedings.mlr.press/v119/voynov20a.html))
+- Generative Modeling with applications in Unsupervised Learning (e.g. using StyleGAN for discovery of [interpretable directions](http://proceedings.mlr.press/v119/voynov20a.html) or [feature extraction](https://genforce.github.io/ghfeat/))
 
 - Theoretical Deep Learning ([understanding benefits of Self-Supervised learning](https://arxiv.org/abs/2102.08850), derivation of [novel Generalization measures](https://windowsontheory.org/2020/10/18/understanding-generalization-requires-rethinking-deep-learning/))
 
