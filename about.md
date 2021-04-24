@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Sergey, a Master student in [Data Science at HSE](https://www.hse.ru/en/ma/datasci/) and Junior Researcher at Yandex.
+Hi, I'm Sergey, a Master student in [Data Science at HSE](https://www.hse.ru/en/ma/datasci/) and Junior Researcher at [Yandex](https://research.yandex.com).
 
 
 Some topics I'm interested in:
