@@ -1,7 +1,9 @@
 ---
 layout: post
-title: '"On Intelligence" in a nutshell (plus a few thoughts)'
+title: 'GANs are not just "fancy images"'
 ---
+
+
 
 I've read a once popular book by Jeff Hawkins where he firstly introduced his 
 HTM framework and tried to squeeze out his insights on how can we improve modern DL models
