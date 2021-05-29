@@ -36,13 +36,13 @@ Finally, we can choose to use the last set of "mixed" approaches, but they are j
 
 # GANs for feature extraction
 
-To perform unsupervised learning we can extract features of some generative model. This is a very old idea, and dates even back to pre-Imagenet era when Neural Networks were initialized not randomly, but [from a weights of Restricted Boltzman Machine](https://www.semanticscholar.org/paper/To-recognize-shapes%2C-first-learn-to-generate-Hinton/51ff037291582df4c205d4a9cbe6e7dcec8f5973). Since then people tried to mix it with basically any paradigm we've listed previously, and GANs are no exception. For instance, [authors of BigBiGAN](https://arxiv.org/abs/1907.02544) proposed to train (guess what) BigGAN model jointly with an encoder, and learn discriminator to distinguish joint distributions of image-latent pairs, where latents for reals are given by encoder (see fig. 1 in the article).
+To perform unsupervised learning we can extract features of some generative model. This is a very old idea, and dates even back to pre-Imagenet era when Neural Networks were initialized not randomly, but [from a weights of Restricted Boltzman Machine](https://www.semanticscholar.org/paper/To-recognize-shapes%2C-first-learn-to-generate-Hinton/51ff037291582df4c205d4a9cbe6e7dcec8f5973). Since then people tried to mix it with basically any paradigm we've listed previously, and GANs are no exception. For instance, [authors of BigBiGAN](https://arxiv.org/abs/1907.02544) proposed to train (guess what) BigGAN model jointly with an encoder, and learn discriminator to distinguish joint distributions of image-latent pairs, where latents for reals are given by encoder (see fig. 1 in their article).
 
 But in practice all those approaches significantly underperform the alternatives, especially with the recent rise of [self-supervised learning](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence). Why?
 
-The authors of "Generative Hierarchical Features from Synthesizing Images" (namely Xu Yinghao, Shen Yujun and others) give a somewhat obvious answer - because we evaluate them on problems that are "too discriminative" (I'll elaborate on that later). 
+The authors of "Generative Hierarchical Features from Synthesizing Images" (namely Xu Yinghao, Shen Yujun and others) give a somewhat obvious answer - because we evaluate them mostly on problems that are "too discriminative" (I'll elaborate on that later). 
 
-Namely they take an existing pre-trained [StyleGAN](https://arxiv.org/abs/1812.04948) model and train a separate resnet-like encoder to predict its adaptive Instance-Norm statistics:
+Namely, they take an existing pre-trained [StyleGAN](https://arxiv.org/abs/1812.04948) model and train a separate resnet-like encoder to predict its adaptive Instance-Norm statistics:
 
 ![GH-Feat scheme](/images/ghfeat_framework.jpg)
 
@@ -67,15 +67,15 @@ Or the problem of layout prediction (when we need to outline basic separation li
 
 Here the top and bottom rows correspond to the predictions made by MoCo and GHFeat respectively with roughly similar encoder architectures.
 
-Overall, the thing is - to generate diverse and realistically-looking images the AdaIN statistics $y_s$ should contain as much information about the output as possible. Those will include many finest details like the texture of grass in outdoor images or the exact position of different objects in scene. In contrast, the features extracted from discriminative models (including those trained with Self-Supervision) are expected to have only features that correlate well with the class or instance labels and thus drop unrelated information about the image. Since the representation capacity of any model is limited, we're either left with a model that highly specialized for more abstract problems but fails on smth low-level tasks or a model that could be used in a variety of low-level tasks but has less useful features to solve abstract problems.
+Let me drop some intuitive pseudo-scientific explanation about this. To generate diverse and realistically-looking images the AdaIN statistics $y_s$ should contain as much information about the output as possible. Those will include many finest details like the texture of grass in outdoor images or the exact position of different objects in scene. In contrast, the features extracted from discriminative models (including those trained with Self-Supervision) are expected to have only features that correlate well with the class or instance labels and thus drop unrelated information about the image. Since the representation capacity of any model is limited, we're either left with a model that highly specialized for more abstract problems but fails on some low-level tasks or a model that could be used in a variety of low-level tasks but has less useful features to solve abstract problems.
 
-GHFeat looks like a second one, and it manages to significantly improve unsupervised approaches on a set of very special tasks that one might face in practice.
-
+Overall, the takeway is - if you need to solve a given downstream task, **a network with better classification accuracy does not necessarily perform better on it**. In cases when classical augmentations (like color jittering or random cropping) could make it harder to solve, it might be reasonable to replace your favorite Self-supervised feature extractor with GHFeat.
 
 # Image rendering with GANs
 
-WIP, stay tuned
+As the previous case sounded quite obvious, here is something that does not - we could use GANs to get 3D object shape from a single image.
 
+To get an intuition of how this works, let us firstly consider the problem of 3D estimation from a multi-view data. That's it - 
 
 # Synthetic datasets and labels
 

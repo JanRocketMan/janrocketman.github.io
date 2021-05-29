@@ -1,0 +1,41 @@
+I"�<p>I’ve read a once popular book by Jeff Hawkins where he firstly introduced his 
+HTM framework and tried to squeeze out his insights on how can we improve modern DL models
+to make them more stable and sample-efficient.</p>
+
+<p><img src="/images/abstract_brain.jpg" alt="Brain structure" /></p>
+
+<!--more-->
+
+<p>First of all, in my humble opinion, the book is written in a very, <em>very</em> informal way,
+with tons of remarks, repetitions and unspecified assumptions. If you’d ever wonder
+what’s the point in using mathematical notation when the main idea of the article you read
+is simple and general, I strongly encourage you to try this one.</p>
+
+<p>Secondly, note that the book was considered to be one of the bestsellers… in 2004. Since then,
+a lot has changed. Hence, along the way I’ll try to mention how the subsequent research partially
+solved the problems described in the book.</p>
+
+<p>Thirdly, I’m still a small modest country guy that may not get all the details correctly. Feel free to
+argue with me in comments, if you think I’m wrong.</p>
+
+<h1 id="general-vision">General vision</h1>
+
+<p>The recent successes of Deep Learning have awaken the long-term dream about AGI again. However,
+they have a number of serious flaws that prevent us from creating something <em>really</em> intelligent.
+Those include, but not limit to: tremendous data-inefficency, as compared with humans, failure to resist
+imperceptible adversarial attacks and training instability.</p>
+
+<p>In this book, Jeff states that it might be due to the fundamental misunderstanding of what a
+human brain actually computes. More specifically, he says that at least three things are essential to understand
+neocortex behaviour:</p>
+
+<ul>
+  <li>Inclusion of time</li>
+  <li>Feedback connections</li>
+  <li>Sparse and hierarchical organization</li>
+</ul>
+
+<p>Here is an example of a neocortex column:
+<img src="/images/neocortex_column.png" alt="Neocortex structure" /></p>
+
+:ET

@@ -1,0 +1,51 @@
+I"�	<p>Hi, I’m Sergey, a Master student in <a href="https://www.hse.ru/en/ma/datasci/">Data Science at HSE</a> and Junior Researcher at <a href="https://research.yandex.com">Yandex</a>.</p>
+
+<p>Some topics I’m interested in:</p>
+
+<ul>
+  <li>
+    <p>Generative Modeling with applications in Unsupervised Learning (e.g. using StyleGAN for discovery of <a href="http://proceedings.mlr.press/v119/voynov20a.html">interpretable directions</a> or <a href="https://genforce.github.io/ghfeat/">feature extraction</a>)</p>
+  </li>
+  <li>
+    <p>Theoretical Deep Learning (<a href="https://arxiv.org/abs/2102.08850">understanding benefits of Self-Supervised learning</a>, derivation of <a href="https://windowsontheory.org/2020/10/18/understanding-generalization-requires-rethinking-deep-learning/">novel Generalization measures</a>)</p>
+  </li>
+  <li>
+    <p>Backpropagation-free DL training (methods such as <a href="https://proceedings.neurips.cc/paper/2019/hash/851300ee84c2b80ed40f51ed26d866fc-Abstract.html">Greedy InfoMax</a>, <a href="https://www.frontiersin.org/articles/10.3389/fncom.2017.00024/full">Equilibrium Propagation</a>)</p>
+  </li>
+  <li>
+    <p>Alternatives and simplifications of Deep Learning that may be scalable (like <a href="https://openreview.net/forum?id=SJxWS64FwH">Scattering networks</a> or <a href="https://papers.nips.cc/paper/2018/hash/5a4be1fa34e62bb8a6ec6b91d2462f5a-Abstract.html">Neural Tangent Kernels</a>)</p>
+  </li>
+</ul>
+
+<p>I also enjoy digging through a lot of papers and getting the overall picture of current research.</p>
+
+<h1 id="research">Research</h1>
+
+<ul>
+  <li><a href="https://arxiv.org/abs/2006.11590">Regression Prior Networks</a></li>
+  <li>Mean Teachers are better GAN trainers (currently under review, preprint to appear soon)</li>
+</ul>
+
+<p>You can also view my master’s thesis on “Exponential Moving Average Teachers for Generative Adversarial Networks” <a href="https://janrocketman.github.io/assets/Master_Thesis_Chervontsev.pdf">here</a>.</p>
+
+<h1 id="contacts">Contacts</h1>
+
+<ul>
+  <li>
+    <p><a href="https://janrocketman.github.io/assets/CV_Chervontsev.pdf">CV</a></p>
+  </li>
+  <li>
+    <p><a href="https://twitter.com/Schmidhoobough">Twitter</a></p>
+  </li>
+  <li>
+    <p><a href="linkedin.com/in/sergey-chervontsev-78436416b">Linkedin profile</a></p>
+  </li>
+  <li>
+    <p><a href="mailto:chervontsev.ss@phystech.edu">Mail - surname at phystech.edu</a></p>
+  </li>
+</ul>
+
+<pre>
+
+</pre>
+:ET

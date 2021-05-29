@@ -19,6 +19,13 @@ Some topics I'm interested in:
 
 I also enjoy digging through a lot of papers and getting the overall picture of current research.
 
+# Research
+
+- [Regression Prior Networks](https://arxiv.org/abs/2006.11590)
+- Mean Teachers are better GAN trainers (currently under review, preprint to appear soon)
+
+You can also view my master's thesis on "Exponential Moving Average Teachers for Generative Adversarial Networks" [here](https://janrocketman.github.io/assets/Master_Thesis_Chervontsev.pdf).
+
 # Contacts
 
 - [CV](https://janrocketman.github.io/assets/CV_Chervontsev.pdf)
