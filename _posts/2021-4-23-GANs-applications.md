@@ -3,9 +3,7 @@ layout: post
 title: 'GANs have applications beyond Image Editing'
 ---
 
-A common view about GANs is that they are heavy computationally demanding
-models with weird and untrackable optimization process that somehow manage to generate realistic images with
-significantly lower diversity than original data and are mostly useful to make some kind of image editing. 
+A common view about GANs is that they are heavy computationally demanding models with weird and untrackable optimization process that somehow manage to generate realistic images with significantly lower diversity than original data and are mostly useful to make some kind of image editing.
 
 This post will discuss several recent articles (on layout and keypoints prediction, novel view synthesis, creation of synthetic datasets and labels) that challenge the last point of this view.
 
@@ -20,19 +18,30 @@ Before diving into potential applications, let's discuss a bit why they rely on 
 
 Basically, for unconditional (or class-conditional, but not image2image) generation in image domain we have the following paradigms:
 
-* Adversarial ([StyleGAN2](https://arxiv.org/abs/1912.04958), [BigGAN](https://arxiv.org/abs/1809.11096))
-* Gradient estimation or denoising autoencoders ([DDPM](https://hojonathanho.github.io/diffusion/), [DDIM](https://arxiv.org/abs/2010.02502))
-* Variational autoencoders ([NVAE](https://proceedings.neurips.cc/paper/2020/hash/e3b21256183cf7c2c7a66be163579d37-Abstract.html))
-* Energy-based models ([Improved EBM](https://arxiv.org/abs/2012.01316))
-* Autoregressive ([PixelSNAIL](http://proceedings.mlr.press/v80/chen18h.html), [Image-GPT](https://openai.com/blog/image-gpt))
-* Invertible normalizing flows with exact log-likelihood estimation ([Glow](https://openai.com/blog/glow))
-* Some mixture of the above ([VQ-VAE2](https://arxiv.org/abs/1906.00446), [Taming Transformers](https://compvis.github.io/taming-transformers))
+* Adversarial ([StyleGAN2](https://paperswithcode.com/method/stylegan2) and [BigGAN](https://paperswithcode.com/method/biggan) seem to rock here)
+* Gradient estimation or energy-based models (where we iteratively use estimated/discriminator gradients to modify initially random inputs, see [Improved Contrastive Divergence](https://energy-based-model.github.io/improved-contrastive-divergence))
+* Denoising autoencoders or diffusion models (same as above but we replace gradients with "denoising transformation" and modify training accordingly, see [DDPM](https://hojonathanho.github.io/diffusion), [DDIM](https://paperswithcode.com/paper/denoising-diffusion-implicit-models-1) or [Guided Diffusion](https://paperswithcode.com/paper/diffusion-models-beat-gans-on-image-synthesis) papers)
+* Autoregressive architectures (like [Image-GPT](https://openai.com/blog/image-gpt))
+* Variational autoencoders (a recent Nvidia take on this is [NVAE](https://github.com/NVlabs/NVAE))
+* Normalizing flows ([Glow](https://openai.com/blog/glow))
+* Some mixture of the above ([VQ-VAE2](https://paperswithcode.com/method/vq-vae-2), [Taming Transformers](https://compvis.github.io/taming-transformers) and lots of other works buried deep on arxiv)
 
-Here I explicitly mentioned examples that currently scale to medium resolutions (like $128 \times 128$) or at least claim to do so (looking at you, VQ-VAE). Now, all of the applications we're to discuss rely on the simplest possible scheme to generate novel images - take pretrained network that samples some feature vector $z$ from a fixed latent distribution $p(z)$ and passes it through multiple layers of transformations.
 
-This leaves behind Autoregressive, Denoising and Energy-based models - they simply need significantly more computation than a single forward pass. VAEs and Flows, although scalable, seem to significantly underperform GANs on medium-to-large resolutions (which is possibly a mixture of the facts that they rely on maximum likelihood estimation and they are less "fun" to work with cause you need to know at least some theory). 
+Here I explicitly mentioned methods that currently scale to medium resolutions (like $128 \times 128$) or at least claim to do so (looking at you, VQ-VAE). All of them give somewhat meaningful representations we could play with.
 
-Finally, we can choose to use the last set of "mixed" approaches, but they are just harder to work with. Besides for some, there are no pre-trained checkpoints available (looking at you, VQ-VAE). As a result, to use some pre-trained GAN currently looks like the best idea.
+In practical applications, we usually want the model simultaneously close to optimal in terms of quality and diversity, easy to train and to work with, and which samples fast and memory-efficient during evaluation.
+
+According to the [recent articles](https://paperswithcode.com/paper/diffusion-models-beat-gans-on-image-synthesis), diffusion models seem to outperform GANs in the first aspect, and so does VQ-VAE2 from DeepMind, but they are spectacularly falling behind in terms of speed.
+
+For instance, as the authors of [Deep Diffusion Implicit Models](https://arxiv.org/abs/2010.02502v1) mention:
+
+> it takes around 20 hours to sample 50k images of size 32 × 32 from a DDPM, but less than a minute to do so from a GAN on a Nvidia 2080 Ti GPU.
+
+This paper shows that we can make them $20 \times$ faster, but that's still a far cry of what a powerful GAN gives us. Besides, even if we reduce sampling to just several forward passes, all of those are performed with an autoencoder-like architecture since we need to preserve dimensionality after every step.
+
+The problem may be less profound for VQ-VAE2, but we don't know for sure. See, neither DeepMind nor "Open" AI have published their checkpoints (thus far) while reproducing their results requires A LOT of compute. So unless you're satisfied with proof-of-concept work on the Cifar dataset, your only options are to work in those companies or to abandon those models (at least for now).
+
+Other methods are significantly worse than those three in terms of quality. As a result, using some pre-trained GANs currently looks like the best idea.
 
 # GANs for feature extraction
 
